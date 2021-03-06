@@ -1,5 +1,5 @@
 {
-  "name": "playground",
+  "name": "playground-node",
   "description": "",
   "main": "index.js",
   "devDependencies": {
