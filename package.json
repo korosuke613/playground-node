@@ -1,0 +1,16 @@
+{
+  "name": "playground",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "ts-node": "^9.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Futa Hirakoba <korosuke613613@gmail.com> (https://korosuke613.github.io/)",
+  "workspaces": [
+    "workspaces/*"
+  ]
+}

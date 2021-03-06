@@ -1,0 +1,16 @@
+{
+  "name": "linear-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Futa Hirakoba <korosuke613613@gmail.com> (https://korosuke613.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "@linear/sdk": "^1.7.0"
+  },
+  "devDependencies": {}
+}
