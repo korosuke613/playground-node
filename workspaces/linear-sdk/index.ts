@@ -1,4 +1,6 @@
-import { LinearClient } from "@linear/sdk";
+import { LinearClient, Issue } from "@linear/sdk";
+import { IssueFragment } from "@linear/sdk/dist/_generated_documents";
+import { createIssue } from "./createIssueWebhook";
 
 const apiKey = process.env.LINEAR_API_KEY;
 const linearClient = new LinearClient({ apiKey });
@@ -10,9 +12,12 @@ const getCurrentUser = async () => {
 async function getMyIssues() {
   const me = await linearClient.viewer;
   const myIssues = await me.assignedIssues();
-  console.log(myIssues);
+  for (const issue of myIssues.nodes) {
+    console.log(`タイトルは${issue.title}`);
+  }
 }
 
 (async () => {
   await getMyIssues();
+  const issue: IssueFragment = createIssue.data;
 })();
